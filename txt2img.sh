@@ -12,7 +12,8 @@ elif [ "$1" == "--help" ]; then
     echo -e "\tL'option  -L  permet de changer la largeur de l'image. (Défaut : 640px)"
     echo -e "\tL'option  -H  permet de changer la hauteur de l'image. (Défaut : 400px)"
     echo -e "\tL'option  -s  permet de changer la taille de fonte.    (Défaut : automatique)"
-    echo -e "\tL'option  -f  permet de forcer l'ecrasement d'une image portant le même nom.\n"
+    echo -e "\tL'option  -f  permet de forcer l'ecrasement d'une image portant le même nom."
+    echo -e "\tL'option  --help  permet d'afficher ce menu.\n"
 
 elif [ $# -lt 2 ]; then
     echo -e "\n\tNombre de paramètre insuffisant. \n\tVotre commande doit comporter au minimum les paramètres suivant :"
