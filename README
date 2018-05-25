@@ -2,6 +2,8 @@ README
 
 Exemple de commandes
 
+./txt2img.sh --help   Permet d´afficher la doc du script.
+
 ./txt2img.sh new.png -s 23 -f 'line1' 'line 3' 'lescalier' 'pwddqsfqsdqsdqdq'
 
 ./txt2img.sh -s 7 -b white -c red -L 1024 -H 800 Newimage.png 'Hello' 'World' 'this' 'is' 'fun'
