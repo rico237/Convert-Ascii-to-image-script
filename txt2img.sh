@@ -121,9 +121,13 @@ else
         else
                 convert -background $couleur_fond -fill $couleur_text -size $taille -gravity center -pointsize $font_size label:"$finalLines" $file_name
         fi
-
-        eog $file_name
-
+        
+        case "$OSTYPE" in
+          darwin*)  open $file_name ;; # OSX
+          linux*)   eog $file_name ;; # Linux
+          *)        echo -e "Système : $OSTYPE inconnu. \nPrévisualisation de l'image non affiché." ;;
+        esac
+        
     fi
         
 fi
