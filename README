@@ -1,4 +1,4 @@
-README
+# Script de convertion ASCII en image
 
 Exemple de commandes
 
